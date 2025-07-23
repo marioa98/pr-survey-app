@@ -1,0 +1,30 @@
+<section class="h-96 flex justify-around items-center gap-10 bg-main">
+    <div class="text-white text-center">
+      <p class="font-semibold text-3xl py-5">
+        Survey Rails App
+      </p>
+      <p>
+        Create your first survey.
+      </p>
+      <p>
+        Start sending surveys to different companies around the world.
+      </p>
+      <div class="py-5 text-black">
+        <%= button_to root_path, id: "get_started" do %>
+          <div class="bg-sign-in p-4 rounded-lg">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+            <span class="ml-1">
+              Get Started
+            </span>
+          </div>
+        <% end %>
+      </div>
+      <p clas="text-sm font-semibold">
+        survey-rails.app.com
+      </p>
+    </div>
+    
+    <div>
+      <%= image_tag("ruby.png", width: "300") %>
+    </div>
+  </section>
