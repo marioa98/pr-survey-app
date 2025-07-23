@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  --color-main: oklch(0.3248 0.0145 217.84);
+  --color-sign-in: oklch(0.902 0.129 164.7);
+  --color-sign-up: oklch(0.969 0.125 134.6);
+  --color-font: oklch(0.412 0.116 220.6);
+  --color-footer-gray: oklch(0.978 0.004 104.7);
+  --color-edit-icon: oklch(0.527 0.142 204.1);
+  --color-remove-icon: oklch(0.414 0.244 29.7);
+  --color-strong-evaluation: oklch(0.441 0.172 142.6);
+  --color-light-evaluation: oklch(0.969 0.073 134.6);
+  --color-strong-chapter: oklch(0.355 0.144 197.6);
+  --color-strong-survey: oklch(0.627 0.112 104.7);
+}
+
+@layer components {
+  .btn-small {
+    padding-block: calc(var(--spacing) * 1);
+    padding-inline: calc(var(--spacing)*4);
+    color: var(--color-black);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading,var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+}
